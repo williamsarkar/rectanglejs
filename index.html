@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Geometry-Resources</title>
+</head>
+
+<body >
+    <header>
+
+    </header>
+    <main>
+
+
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex-1 grid grid-cols-1 md:gird-cols-2 lg:grid-cols-3 gap-6">
+                <!-- first card              -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body ">
+                        <h2 class="card-title ">Triangle</h2>
+                        <p>Area (A) =0.5 x b x h</p>
+                        <p>
+                            <input type="text" class="border w-20 px-3 bg-base-200 " id="input-base1" placeholder="b"><span class="ml-3">cm</span>
+                            <input type="text" class="border w-20 px-3 bg-base-200 " id="input-height2" placeholder="h"><span class="ml-3">cm</span><br>
+                            <p>area: <span id="first-area">00</span></p>
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary w-full" id="first-btn">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second card               -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body w-full">
+                        <h2 class="card-title mx-auto">Rectangle</h2>
+                        <p>Area (A) = w x i</p>
+                        <p>
+                            <input type="text" class="border w-20 px-3 bg-base-200 " id="second-input1" placeholder="w"><span class="ml-3">cm</span>
+                            <input type="text" class="border w-20 px-3 bg-base-200 " id="second-input2" placeholder="i"><span class="ml-3">cm</span><br>
+                            <p>area: <span id="second-area">00</span></p>
+                        </p>
+                        <div class="card-actions ">
+                            <button class="btn btn-primary w-full" id="second-btn">calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">parallelogram</h2>
+                        <p>Area (A) = b x h</p>
+                        <p>
+                            <input type="text" class="border w-20 px-3 bg-base-200 " id="third-input1" placeholder="w"><span class="ml-3">cm</span>
+                            <input type="text" class="border w-20 px-3 bg-base-200 " id="third-input2" placeholder="i"><span class="ml-3">cm</span><br>
+                            <p>area: <span id="second-area">00</span></p>
+                        </p>
+                        <div class="card-actions ">
+                            <button onclick="peralalogrum()" class="btn btn-primary w-full ">calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[300px]">
+                <div class="text-3xl"> Area Calculator </div>
+            </div>
+
+        </div>
+
+
+    </main>
+<script src="area.calculator.js"></script>
+<script src="second.area.js"></script>
+</body>
+
+</html>
